@@ -58,8 +58,8 @@ export default function Home() {
             className="flex items-center justify-center gap-3 mb-12"
             variants={scaleIn}
           >
-            <User className="w-8 h-8 text-blue-400" />
-            <h2 className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 font-playfair">
+            <User className="w-8 h-8 text-blue-400" aria-hidden="true" />
+            <h2 id="about-heading" className="text-4xl font-bold text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-400 font-playfair">
               About Me
             </h2>
           </motion.div>

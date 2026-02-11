@@ -31,12 +31,13 @@ const Hero = () => {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.2 }}
-              className="text-6xl md:text-7xl font-bold tracking-tight"
+              className="text-3xl md:text-5xl font-bold tracking-tight"
             >
               <span className="text-gray-200">
                 Talk is Cheap </span>{" "}
               <span className="text-gray-200">Show me the Code! </span>
             </motion.h1>
+            <meta name="description" content="Talk is Cheap Show me the Code! - Mayur Hase, Cloud & DevOps Engineer" />
 
             <motion.div
               initial={{ opacity: 0 }}
@@ -44,7 +45,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
             >
               <div className="relative inline-block">
-                <span className="text-4xl md:text-5xl font-bold">
+                <span className="text-3xl md:text-4xl font-bold">
                   <span className="mx-2 px-6 py-2 bg-gradient-to-r from-purple-500/20 to-blue-500/20 rounded-xl border border-purple-500/30 inline-flex items-center">
                     <span className="bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
                      Cloud & DevOps Engineer
