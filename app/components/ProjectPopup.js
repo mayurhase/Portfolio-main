@@ -40,20 +40,6 @@ const ProjectPopup = ({ isOpen, onClose }) => {
       image: "/projects/mayur-auto-world.png"
     },
     {
-      title: "Shark Commercial",
-      description: "Production-grade business website deployed on cloud infrastructure with focus on operational stability. Managed hosting, DNS, SSL, access control, and routine maintenance. Ensured secure and consistent production delivery.",
-      techStack: [
-        { name: "AWS", icon: Server, color: "#FF9900" },
-        { name: "Linux", icon: Code2, color: "#FCC624" },
-        { name: "Nginx", icon: Globe, color: "#009639" },
-        { name: "SSL", icon: Shield, color: "#00AEEF" },
-        { name: "DNS", icon: Globe, color: "#007BFF" },
-        { name: "IT Operations", icon: MonitorSmartphone, color: "#28A745" }
-      ],
-      livePreview: "https://www.sharkcommercial.in",
-      image: "/projects/shark-commercial.png"
-    },
-    {
       title: "Saivatika 4",
       description: "Production website deployed and maintained on cloud infrastructure with focus on reliability and performance. Managed hosting, domain configuration, SSL, deployment workflows, and uptime monitoring. Ensured secure access, optimized load performance, and handled production updates.",
       techStack: [
@@ -80,20 +66,6 @@ const ProjectPopup = ({ isOpen, onClose }) => {
       ],
       livePreview: "https://www.skautoworld.in",
       image: "/projects/sk-auto-world.png"
-    },
-    {
-      title: "Royal Shetkari",
-      description: "Public-facing organizational website deployed on cloud infrastructure with a focus on stability, security, and operational reliability. Responsible for hosting setup, domain and DNS configuration, SSL enforcement, and ongoing production maintenance.",
-      techStack: [
-        { name: "AWS", icon: Server, color: "#FF9900" },
-        { name: "Linux", icon: Code2, color: "#FCC624" },
-        { name: "Nginx", icon: Globe, color: "#009639" },
-        { name: "DNS", icon: Globe, color: "#007BFF" },
-        { name: "SSL", icon: Shield, color: "#00AEEF" },
-        { name: "Cloud Operations", icon: MonitorSmartphone, color: "#28A745" }
-      ],
-      livePreview: "https://www.royalshetkari.org",
-      image: "/projects/royal-shetkari.png"
     }
   ];
 
