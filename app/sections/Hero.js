@@ -61,9 +61,10 @@ const Hero = () => {
             initial={{ scale: 0.5, opacity: 0 }}
             animate={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.6 }}
-            className="mb-8"
+            whileHover={{ scale: 1.05, boxShadow: "0 8px 25px rgba(147, 51, 234, 0.4)" }}
+            className="mb-8 cursor-pointer"
           >
-            <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gradient-to-r from-orange-600 to-orange-400 rounded-full mx-auto p-1">
+            <div className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 bg-gradient-to-r from-purple-600 to-blue-400 rounded-full mx-auto p-1">
               <div className="w-full h-full relative rounded-full overflow-hidden">
                 <Image
                   src="/cloud_devops_engineer.jpeg"

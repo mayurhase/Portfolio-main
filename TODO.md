@@ -1,4 +1,5 @@
-# Hero Profile Image Fix Tasks
+# TODO: Fix Profile Picture Theme Inconsistency
 
-- [x] Remove overflow-hidden from the Hero section to allow vertical growth on mobile
-- [x] Update profile image container classes to w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 for responsive sizing
+- [ ] Update profile picture container gradient from orange to purple/blue in `app/sections/Hero.js`
+- [ ] Update hover glow effect from orange to purple in `app/sections/Hero.js`
+- [ ] Test the changes by running the development server and verifying the consistent theme

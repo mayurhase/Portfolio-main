@@ -92,7 +92,12 @@ const ProjectPopup = ({ isOpen, onClose }) => {
             <div className="bg-gradient-to-br from-gray-900/98 to-black/98
                           border border-purple-500/30 shadow-xl shadow-purple-500/20
                           backdrop-blur-xl rounded-xl p-6">
-              <div className="flex justify-between items-center mb-6">
+              <motion.div
+                className="flex justify-between items-center mb-6"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+              >
                 <div className="flex items-center gap-2">
                   <MonitorSmartphone className="w-6 h-6 text-purple-400" />
                   <h2 className="text-2xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 text-transparent bg-clip-text">
@@ -105,20 +110,38 @@ const ProjectPopup = ({ isOpen, onClose }) => {
                 >
                   <X className="w-5 h-5 text-gray-400" />
                 </button>
-              </div>
+              </motion.div>
 
               <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {projects.map((project, index) => (
                   <motion.div
                     key={project.title}
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
-                    className={`bg-white/5 rounded-xl overflow-hidden border 
+                    initial={{ opacity: 0, y: 30 }}
+                    animate={{
+                      opacity: 1,
+                      y: [0, -5, 0]
+                    }}
+                    transition={{
+                      delay: 0.6 + index * 0.15,
+                      duration: 0.8,
+                      ease: "easeOut",
+                      y: {
+                        duration: 6,
+                        repeat: Infinity,
+                        ease: "easeInOut",
+                        delay: 0.6 + index * 0.15
+                      }
+                    }}
+                    whileHover={{
+                      y: -10,
+                      scale: 1.03,
+                      transition: { duration: 0.4, ease: "easeOut" }
+                    }}
+                    className={`bg-white/5 rounded-xl overflow-hidden border
                               ${project.featured
                         ? 'border-purple-500/50 shadow-lg shadow-purple-500/30 scale-105'
-                        : 'border-purple-500/30'} 
-                              hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20 
+                        : 'border-purple-500/30'}
+                              hover:border-purple-500/50 hover:shadow-lg hover:shadow-purple-500/20
                               transition-all duration-300`}
                   >
                     <div className="relative h-48 md:h-52">
